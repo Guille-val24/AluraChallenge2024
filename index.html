@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desencriptador</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header> 
-        <img src="./AluraLogo1.png" alt="Logo de Alura Latam">    
-    </header>
-    <section> 
-        <textarea> Ingrese el mensaje deseado </textarea> 
-    </section>
+    <main class="main">
+        <header class="encabezado"> 
+            <img src="./assets/Logo.png" alt="Logo de Alura Latam">    
+        </header>
 
-    <button class="encriptar"> Encriptar  </button>
-    <button class="desencriptar"> Desencriptar  </button>
-    <footer>  </footer>
+        <section class="encriptador"> 
+            <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el mensaje deseado"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minusculas y sin acentos</h6>
+            </div>
+            <div class="botones">
+                <button class="botones__encriptar"> Encriptar  </button>
+                <button class="botones__desencriptar"> Desencriptar  </button>
+            </div>
+        </section>
+        <section class="desencriptador">
+            <textarea class="text-area" cols="20" rows="10"></textarea>
+            <div>
+                <button class="copiar"> Copiar </button>
+            </div>
+        </section>
+        <footer class="footer"> Creado por Guillermina Valdez </footer>
+    </main>
+    
 </body>
 </html>
