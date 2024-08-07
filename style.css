@@ -1,22 +1,102 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
+    margin:0%;
+    padding: 0%;
     background-color: #F3F5FC;
     font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left;
     
 }
 
-. main{
-    display: flex;
-    margin: 0 10% 20% 10%;
-}
-
 .encabezado{
-    font-weight: 400;
-    font-size: 2rem;
+    padding-top: 40px;
+    margin-left: 40px;
+    width: 10%;
+}
+
+main{ 
+    display: flex;
+    margin-left: 240px;
+    margin-bottom: 72px;
+}
+
+.text-area{
     color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    border: none;
 }
 
-.encriptador{
+::placeholder{color: #0A3871;}
+ .text-area:focus{
+    outline: none;
+ }
 
+
+ .botones{
+    display: flex;
+    margin-top: 10px;
+    gap: 80px;
 }
+
+.botones__encriptar{
+    padding: 3%;    
+    width: 200px;
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center; 
+    cursor: pointer;
+ }
+
+ .botones__desencriptar{
+    padding: 3%;
+    width: 200px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+ }
+
+.desencriptador{
+    background-color:transparent;
+    box-shadow: 5px 5px 5px grey;
+    margin-top: 40px;
+    margin-left: 98px;
+    padding-left: 40px;
+    color: #0A3871;
+    border: none;
+    border-radius: 32px;
+}
+
+.desencriptador:focus{
+    outline: none;
+}
+
+.botones__copiar{
+    padding: 3%;
+    width: 80%;
+    align-items: center;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+ }
+
+ .footer{
+    width: 100%;
+    text-align: center;
+ }
+
+ .links{
+    cursor: pointer;
+ }
