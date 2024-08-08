@@ -21,9 +21,11 @@ main{
     display: flex;
     margin-left: 240px;
     margin-bottom: 72px;
+    
 }
 
 .text-area{
+    background-color: transparent;
     color: #0A3871;
     margin-top: 90px;
     text-transform: lowercase;
@@ -43,13 +45,13 @@ main{
 }
 
 .botones__encriptar{
+    background-color: #0A3871;
     padding: 3%;    
     width: 200px;
-    background-color: #0A3871;
     border: 1px solid #0A3871;
     border-radius: 24px;
     font-size: 16px;
-    color: #FFFFFF;
+    color: #F3F5FC;
     text-align: center; 
     cursor: pointer;
  }
@@ -66,11 +68,19 @@ main{
  }
 
 .desencriptador{
-    background-color:transparent;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/assets/Muñeco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 650px;
     box-shadow: 5px 5px 5px grey;
-    margin-top: 40px;
-    margin-left: 98px;
-    padding-left: 40px;
+    margin-top: 0;
+    margin-left: 50px;
+    padding-left: 20px;
     color: #0A3871;
     border: none;
     border-radius: 32px;
@@ -82,8 +92,7 @@ main{
 
 .botones__copiar{
     padding: 3%;
-    width: 80%;
-    align-items: center;
+    width: 200px;
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
@@ -93,10 +102,13 @@ main{
  }
 
  .footer{
+    padding: 10px;
     width: 100%;
     text-align: center;
  }
 
  .links{
+    width: 35px;
+    padding: 10px;
     cursor: pointer;
  }
