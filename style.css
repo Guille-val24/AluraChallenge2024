@@ -12,7 +12,7 @@
 }
 
 .encabezado{
-    padding-top: 40px;
+    padding-top: 20px;
     margin-left: 40px;
     width: 10%;
 }
@@ -25,13 +25,14 @@ main{
 }
 
 .text-area{
+    width: 80%;
+    margin: 90px 40px;
+    resize: none;
     background-color: transparent;
     color: #0A3871;
-    margin-top: 90px;
     text-transform: lowercase;
     border: none;
 }
-
 ::placeholder{color: #0A3871;}
  .text-area:focus{
     outline: none;
@@ -71,12 +72,12 @@ main{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     background-image: url(/assets/Muñeco.png);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     width: 400px;
-    height: 650px;
+    height: 550px;
     box-shadow: 5px 5px 5px grey;
     margin-top: 0;
     margin-left: 50px;
@@ -84,6 +85,7 @@ main{
     color: #0A3871;
     border: none;
     border-radius: 32px;
+    gap: 20px;
 }
 
 .desencriptador:focus{
@@ -91,12 +93,16 @@ main{
 }
 
 .mensaje{
+    width: 70%;
+    height: 70%;
+    margin-top: 10px;
     background-color: transparent;
+    resize: none;
     color: #0A3871;
-    margin-top: 90px;
     text-transform: lowercase;
     border: none;
 }
+
 
 .botones__copiar{
     padding: 3%;
