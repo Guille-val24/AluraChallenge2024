@@ -44,7 +44,6 @@ main{
     resize: none;
     background-color: transparent;
     color: var(--color-primario);
-    text-transform: lowercase;
     border: none;
 }
 ::placeholder{color: var(--color-primario);}
@@ -52,6 +51,9 @@ main{
     outline: none;
  }
 
+.informacion{
+    color: var(--color-primario);
+}
 
  .botones{
     display: flex;
@@ -110,14 +112,15 @@ main{
 }
 
 .mensaje{
-    width: 70%;
+    width: 90%;
     height: 70%;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-left: 10px;
     background-color: transparent;
     resize: none;
     color: var(--color-primario);
-    text-transform: lowercase;
     border: none;
+    text-align: center;
 }
 
 
@@ -179,5 +182,46 @@ main{
 
  /* Media query para smartphones */
 @media only screen and (min-width: 320px) and (max-width: 599px) {
+    .encabezado{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        margin-left: 0px;
+        width: 5%;
+    }
+
+    .titulo{
+        margin-left: 10px;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 600;
+     }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin: 20%;
+        gap: 20px;
+    }
+
+    .botones{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .desencriptador{
+        width: 85%;
+        height: auto;
+        margin: 0%;
+        align-items: center;
+        background-image: none;
+        box-shadow: 5px 5px 5px var(--color-shadow);
+    }
+
+    .botones__copiar{
+        width: 150px;
+        margin: 30px;
+     }
     
 }
